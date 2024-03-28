@@ -1,4 +1,4 @@
-# Create and manage infrastructure using Terraform and automate the deployment process with GitHub Actions.
+# Create and manage infrastructure using Terraform and automate the deployment process and destruction with GitHub Actions.
 
 ![Screenshot 2024-03-28 at 11 53 14 PM](https://github.com/Jha16Pooja/vpc-terraform-github-actions/assets/155782646/7bbadc74-a3f7-442a-9ec3-84c9a7ab9f8e)
 
