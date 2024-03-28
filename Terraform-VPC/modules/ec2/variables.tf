@@ -11,5 +11,5 @@ variable "subnets" {
 variable "ec2_names" {
   description = "EC2 Names"
   type = list(string)
-  default = [ "WebServer1" , "WebServer2" ]
+  default = [ "WebServer_1" , "WebServer_2" ]
 }
