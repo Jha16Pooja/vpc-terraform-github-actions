@@ -3,6 +3,12 @@ name: Destroy Terraform Infrastructure
 on:
   workflow_dispatch:
 
+
+env:
+  AWS_ACCESS_KEY_ID: ${{ secrets.AWS_SECRET_ACCESS_ID }}
+  AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY_ID }}
+
+
 jobs:
   destroy:
     name: Terraform Destroy
@@ -23,7 +29,4 @@ jobs:
     - name: Terraform Destroy
       run: terraform destroy -auto-approve
       working-directory: ./Terraform-VPC
-      env:
-        AWS_ACCESS_KEY_ID: ${{ secrets.AWS_SECRET_ACCESS_ID }}
-        AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY_ID }}
 
