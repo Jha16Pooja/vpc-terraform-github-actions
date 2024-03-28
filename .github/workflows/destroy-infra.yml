@@ -1,0 +1,29 @@
+name: Destroy Terraform Infrastructure
+
+on:
+  workflow_dispatch:
+
+jobs:
+  destroy:
+    name: Terraform Destroy
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout Code
+      uses: actions/checkout@v2
+
+    - name: Setup Terraform
+      uses: hashicorp/setup-terraform@v2
+      with:
+        terraform_version: latest
+
+    - name: Terraform Init
+      run: terraform init
+      working-directory: ./Terraform-VPC
+
+    - name: Terraform Destroy
+      run: terraform destroy -auto-approve
+      working-directory: ./Terraform-VPC
+      env:
+        AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
+        AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+
