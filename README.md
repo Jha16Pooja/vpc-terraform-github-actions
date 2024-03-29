@@ -6,25 +6,25 @@
 Introduction
 This GitHub project provides a comprehensive guide and a set of resources to create and manage infrastructure using Terraform and automate the deployment process using GitHub Actions.
 
-Terraform is an open-source infrastructure as code (IaC) tool that allows you to define and provision infrastructure using a declarative configuration language.
+Terraform is an open-source infrastructure as code (IaC) tool that allows to definition and provision of infrastructure using a declarative configuration language.
 
 Whereas GitHub Actions is a powerful automation and CI/CD platform provided by GitHub.
 
-By combining Terraform and GitHub Actions, you can:
+By combining Terraform and GitHub Actions, we can:
 
-Define Infrastructure as Code: Define your infrastructure components, such as virtual machines, databases, and networks, in a Terraform configuration file.
+Define Infrastructure as Code: Define the infrastructure components, such as virtual machines, databases, and networks, in a Terraform configuration file.
 
-Automate Deployment: Set up GitHub Actions workflows to automatically deploy your infrastructure whenever there are changes to your Terraform configuration.
+Automate Deployment: Set up GitHub Actions workflows to automatically deploy the infrastructure whenever there are changes to the Terraform configuration.
 
-Version Control: Keep your infrastructure code version-controlled and easily collaborate with your team.
+Version Control: Keep the infrastructure code version-controlled and easily collaborate with the team.
 
 Infrastructure as Code Best Practices: Follow best practices for infrastructure as code, including versioning, code review, and documentation.
 
-This project serves as a starting point for your infrastructure automation journey, providing a basic structure and guidelines to build upon.
+This project serves as a starting point for the infrastructure automation journey, providing a basic structure and guidelines to build upon.
 
 Prerequisites
-Before you begin, ensure you have the following prerequisites:
+Before starting, ensure to have the following prerequisites:
 
 GitHub Account
-Terraform is installed on your local machine.
+Terraform is installed on the local machine.
 Access to a cloud provider account (e.g., AWS, Azure, Google Cloud) and necessary API credentials.
